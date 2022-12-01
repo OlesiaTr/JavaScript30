@@ -1,0 +1,2 @@
+!function(){var e={body:document.querySelector("body"),keys:document.querySelectorAll(".key")};function t(e){"transform"===e.propertyName&&this.classList.remove("playing")}e.body.addEventListener("keydown",(function(e){var t=document.querySelector('audio[data-key="'.concat(e.keyCode,'"]'));if(!t)return;t.currentTime=0,t.play();var n=document.querySelector('.key[data-key="'.concat(e.keyCode,'"]'));if(!n)return;n.classList.add("playing")})),e.keys.forEach((function(e){return e.addEventListener("transitionend",t)}))}();
+//# sourceMappingURL=01-js-drum-kit.7b7676c9.js.map

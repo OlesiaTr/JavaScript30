@@ -1,0 +1,2 @@
+const e={body:document.querySelector("body"),keys:document.querySelectorAll(".key")};function t(e){"transform"===e.propertyName&&this.classList.remove("playing")}e.body.addEventListener("keydown",(function(e){const t=document.querySelector(`audio[data-key="${e.keyCode}"]`);if(!t)return;t.currentTime=0,t.play();const n=document.querySelector(`.key[data-key="${e.keyCode}"]`);if(!n)return;n.classList.add("playing")})),e.keys.forEach((e=>e.addEventListener("transitionend",t)));
+//# sourceMappingURL=01-js-drum-kit.079bfc9f.js.map
