@@ -1,0 +1,2 @@
+html{background:#ffc600;font-family:sans-serif}.inbox{max-width:400px;background:#fff;border-radius:5px;margin:50px auto;box-shadow:10px 10px rgba(0,0,0,.1)}.item{border-bottom:1px solid #f1f1f1;align-items:center;display:flex}.item:last-child{border-bottom:0}input:checked+p{background:#f9f9f9;text-decoration:line-through}input[type=checkbox]{margin:20px}p{border-left:1px solid #d1e2ff;flex:1;margin:0;padding:20px;font-family:helvetica neue;font-size:20px;font-weight:200;transition:background .2s}
+/*# sourceMappingURL=10-hold-shift-and-check-checkboxes.afb36b55.css.map */

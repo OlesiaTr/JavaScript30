@@ -1,0 +1,1 @@
+{"mappings":"AAAiBA,SAASC,cAAc,cACtBD,SAASC,cAAc","sources":["src/js/15-localStorage.js"],"sourcesContent":["const addItems = document.querySelector('.add-items');\nconst itemsList = document.querySelector('.plates');\nconst items = [];\n"],"names":["document","querySelector"],"version":3,"file":"15-localStorage.4e5d0f2d.js.map"}

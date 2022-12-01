@@ -1,0 +1,1 @@
+{"mappings":"AAAAA,OAAOC,kBACLD,OAAOC,mBAAqBD,OAAOE","sources":["src/js/20-speech-detection.js"],"sourcesContent":["window.SpeechRecognition =\n  window.SpeechRecognition || window.webkitSpeechRecognition;\n"],"names":["window","SpeechRecognition","webkitSpeechRecognition"],"version":3,"file":"20-speech-detection.e57dbc5b.js.map"}
