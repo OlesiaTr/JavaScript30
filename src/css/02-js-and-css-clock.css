@@ -41,4 +41,17 @@ body {
   background: black;
   position: absolute;
   top: 50%;
+  /* makes it rotate not around the center, but the mosr right point */
+  transform-origin: 100%;
+  /* rotating divs so that it would start at 12:00 */
+  transform: rotate(90deg);
+  transition: all 0.05s cubic-bezier(0, 2.7, 0.58, 1);
+}
+
+.hour-hand {
+  height: 8px;
+}
+
+.second-hand {
+  background-color: rosybrown;
 }
