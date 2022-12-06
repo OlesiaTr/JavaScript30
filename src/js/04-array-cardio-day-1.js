@@ -61,26 +61,53 @@ const people = [
   'Beecher, Henry',
   'Biondo, Frank',
 ];
-
 // Array.prototype.filter()
 // 1. Filter the list of inventors for those who were born in the 1500's
+const filterTask = [...inventors].filter(
+  ({ year }) => year >= 1500 && year <= 1599
+);
+// console.log(filterTask);
 
 // Array.prototype.map()
 // 2. Give us an array of the inventors first and last names
+const mapTask = [...inventors].map(({ first, last }) => `${first} ${last}`);
+// console.log(mapTask);
 
 // Array.prototype.sort()
 // 3. Sort the inventors by birthdate, oldest to youngest
+const sortTask = [...inventors].sort((a, b) => a.year - b.year);
+// console.log(sortTask);
 
 // Array.prototype.reduce()
 // 4. How many years did all the inventors live all together?
+const reduceTask = [...inventors].reduce(
+  (totalYears, { year, passed }) => passed - year + totalYears,
+  0
+);
+// console.log(reduceTask);
 
 // 5. Sort the inventors by years lived
+const taskFive = [...inventors].sort(
+  (a, b) => b.passed - b.year - (a.passed - a.year)
+);
+// console.log(taskFive);
 
 // 6. create a list of Boulevards in Paris that contain 'de' anywhere in the name
 // https://en.wikipedia.org/wiki/Category:Boulevards_in_Paris
+const links = [...document.querySelectorAll('.mw-category a')];
+const taskSix = [...links]
+  .map(link => link.textContent)
+  .filter(street => street.includes('de'));
+// console.log(taskSix);
 
 // 7. sort Exercise
 // Sort the people alphabetically by last name
+const taskSeven = [...people].sort((first, last) => {
+  const [aLast, aFirst] = first.split(', ');
+  const [bLast, bFirst] = last.split(', ');
+  return aLast > bLast ? 1 : -1;
+});
+// console.log(taskSeven);
 
 // 8. Reduce Exercise
 // Sum up the instances of each of these
@@ -100,3 +127,12 @@ const data = [
   'car',
   'truck',
 ];
+
+// Empty obj, because we don't know the values that we are going to recieve
+const taskEight = [...data].reduce((obj, item) => {
+  // iteratting through the obj
+  if (!obj[item]) obj[item] = 0; //if no item previously - setting to zero and then adding
+  obj[item]++;
+  return obj;
+}, {});
+// console.log(taskEight);
