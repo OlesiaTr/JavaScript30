@@ -1,3 +1,19 @@
+:root {
+  --spacing: 20px;
+  --base: #ffc600;
+  --blur: 10px;
+}
+
+img {
+  padding: var(--spacing);
+  background-color: var(--base);
+  filter: blur(var(--blur));
+}
+
+.hl {
+  color: var(--base);
+}
+
 /*
       misc styles, nothing to do with CSS variables
     */
