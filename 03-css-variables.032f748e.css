@@ -1,0 +1,2 @@
+:root{--spacing:20px;--base:#ffc600;--blur:10px}img{padding:var(--spacing);background-color:var(--base);filter:blur(var(--blur))}.hl{color:var(--base)}body{text-align:center;color:#fff;background:#193549;font-family:helvetica neue,sans-serif;font-size:50px;font-weight:100}.controls{margin-bottom:50px}input{width:100px}
+/*# sourceMappingURL=03-css-variables.032f748e.css.map */
