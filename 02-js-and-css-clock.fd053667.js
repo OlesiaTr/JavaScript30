@@ -1,2 +1,0 @@
-const e={second:document.querySelector(".second-hand"),minute:document.querySelector(".min-hand"),hour:document.querySelector(".hour-hand")};function t(){const t=new Date,n=t.getSeconds()/60*360+90;e.second.style.transform=`rotate(${n}deg)`;const o=t.getMinutes()/60*360+90;e.minute.style.transform=`rotate(${o}deg)`;const r=t.getHours()/12*360+90;e.hour.style.transform=`rotate(${r}deg)`}setInterval(t,1e3),t();
-//# sourceMappingURL=02-js-and-css-clock.fd053667.js.map

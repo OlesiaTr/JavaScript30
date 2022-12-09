@@ -1,0 +1,2 @@
+!function(){var e={panels:document.querySelector(".panels"),panel:document.querySelectorAll(".panel")};function n(){this.classList.toggle("open")}function t(e){e.propertyName.includes("flex")&&this.classList.toggle("is-active")}e.panel.forEach((function(e){return e.addEventListener("click",n)})),e.panel.forEach((function(e){return e.addEventListener("transitionend",t)}))}();
+//# sourceMappingURL=05-flex-panel-gallery.4ab7abc3.js.map
