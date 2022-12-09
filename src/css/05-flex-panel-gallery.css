@@ -19,6 +19,8 @@ body {
 .panels {
   min-height: 100vh;
   overflow: hidden;
+
+  display: flex;
 }
 
 .panel {
@@ -34,6 +36,23 @@ body {
   font-size: 20px;
   background-size: cover;
   background-position: center;
+
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.panel > *:first-child {
+  transform: translateY(-400%);
+}
+
+.panel > *:last-child {
+  transform: translateY(400%);
+}
+
+.panel.is-active > *:first-child,
+.panel.is-active > *:last-child {
+  transform: translateY(0);
 }
 
 .panel1 {
@@ -76,4 +95,6 @@ body {
 
 .panel.open {
   font-size: 40px;
+
+  flex: 5;
 }
