@@ -15,14 +15,25 @@ const comments = [
   { text: 'Nice Nice Nice!', id: 542328 },
 ];
 
+const year = new Date().getFullYear();
+
 // Some and Every Checks
 // Array.prototype.some() // is at least one person 19 or older?
+const task1 = [...people].some(person => year - person.year >= 19);
+
 // Array.prototype.every() // is everyone 19 or older?
+const task2 = [...people].every(person => year - person.year >= 19);
 
 // Array.prototype.find()
 // Find is like filter, but instead returns just the one you are looking for
 // find the comment with the ID of 823423
+const task3 = [...comments].find(comment => comment.id === 823423);
 
 // Array.prototype.findIndex()
 // Find the comment with this ID
 // delete the comment with the ID of 823423
+const index = [...comments].findIndex(comment => comment.id === 823423);
+const task4 = [
+  ...comments.slice(0, index), //goes to the needed index to remove
+  ...comments.slice(index + 1), //adds everything thats left
+];
